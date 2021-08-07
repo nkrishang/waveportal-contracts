@@ -18,11 +18,11 @@ contract WavePortal {
   /// @dev Lets this contract accept ether.
   receive() external payable {}
 
-  event NewWave(address indexed from, uint timestamp, bytes message);
+  event NewWave(address indexed from, uint timestamp, string message);
   event PrizeWon(address indexed winner, uint prizeAmount);
 
   /// @dev Lets someone wave at you.
-  function waveAtMe(bytes memory _message) external {
+  function waveAtMe(string calldata _message) external {
 
     require(lastWavedAt[msg.sender] + 15 minutes < block.timestamp, "Must wait 15 minutes before waving again.");
     

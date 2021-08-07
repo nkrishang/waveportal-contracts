@@ -13,5 +13,6 @@
     "ethers": "^5.4.4",
     "hardhat": "^2.5.0",
     "hardhat-abi-exporter": "^2.2.1"
-  }
+  },
+  "dependencies": {}
 }
