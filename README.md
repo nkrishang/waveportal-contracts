@@ -23,3 +23,9 @@ Compile the contracts in the `/contracts` directory by running
 ```bash
 npx hardhat compile
 ```
+
+Run tests with the following command
+
+```bash
+npx hardhat test
+```
